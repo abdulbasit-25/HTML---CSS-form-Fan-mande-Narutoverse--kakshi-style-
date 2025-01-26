@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinobi Registration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+
+
+
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid #555;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            line-height: 1.8;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ddd;
+            text-transform: uppercase;
+            text-shadow: 0 0 8px #aaa, 0 0 4px #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        input, select {
+            background-color: #1b1b1b;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 10px 15px;
+            width: 90%;
+            height: 40px;
+            color: #ddd;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+        }
+
+        input::placeholder {
+            color: #777;
+            font-style: italic;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        button {
+            background-color: #333;
+            color: #ddd;
+            border: 1px solid #444;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        .checkbox-group {
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .checkbox-group input {
+            width: 15px;
+            margin-right: 10px;
+        }
+
+        .checkbox-group a {
+            color: #888;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            input, select {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="Kakashi_videoloop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Shinobi Registration</h1>
+        <form action="#" method="POST">
+            <label for="name">
+                <h3>Full Name:</h3>
+            </label>
+            <input type="text" id="name" name="name" placeholder="Enter your shinobi name" required>
+            
+            <label for="email">
+                <h3>Email:</h3>
+            </label>
+            <input type="email" id="email" name="email" placeholder="Enter your shinobi email" required>
+            
+            <label for="phone">
+                <h3>Phone Number:</h3>
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" required>
+            
+            <label for="password">
+                <h3>Password:</h3>
+            </label>
+            <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+            
+            <label for="gender">
+                <h3>Gender:</h3>
+            </label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="village">
+                <h3>Village:</h3>
+            </label>
+            <select id="village" name="village" required>
+                <option value="">Select your village</option>
+                <option value="Hidden-Leaf">Hidden-Leaf</option>
+                <option value="Hidden-Stone">Hidden-Stone</option>
+                <option value="Hidden-Cloud">Hidden-Cloud</option>
+                <option value="Hidden-Sand">Hidden-Sand</option>
+            </select>
+
+            <label for="chakra">
+                <h3>Chakra Nature:</h3>
+            </label>
+            <select id="chakra" name="chakra" required>
+                <option value="">Select your chakra nature</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="earth">Earth</option>
+                <option value="wind">Wind</option>
+                <option value="lightning">Lightning</option>
+                <option value="yin">Yin</option>
+                <option value="yang">Yang</option>
+            </select>
+
+            <label for="rank">
+                <h3>Ninja Rank:</h3>
+            </label>
+            <select id="rank" name="rank" required>
+                <option value="">Select your ninja rank</option>
+                <option value="genin">Genin</option>
+                <option value="chunin">Chunin</option>
+                <option value="jonin">Jonin</option>
+                <option value="kage">Kage</option>
+            </select>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I agree to the <a href="#">Ninja Code of Conduct</a>.
+                </label>
+            </div>
+
+            <button type="submit">Register as a Shinobi</button>
+        </form>
+    </div>
+</body>
+</html>

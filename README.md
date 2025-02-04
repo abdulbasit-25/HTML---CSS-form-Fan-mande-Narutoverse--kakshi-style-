@@ -17,13 +17,13 @@ This fan-made **Narutoverse-themed registration form** immerses users in the exp
 
 ## Demo
 
-To see the form in action, download or clone the repository and open the **index.html** file in your browser.
+To see the form in action, download or clone the repository and open the **Kakashi with video.html** file in your browser.
 
 ## Project Setup
 
 1. **Clone or download** this repository.
 2. Place the **Kakashi_videoloop.mp4** file in the same directory as **index.html**.
-3. Open **index.html** in your preferred browser.
+3. Open **Kakashi with video.html** in your preferred browser.
 
 ## Contribution
 
